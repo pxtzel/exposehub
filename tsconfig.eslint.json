@@ -1,0 +1,10 @@
+{
+	"extends": "./tsconfig.json",
+	"include": [
+		"eslint.config.js",
+		"vite.config.ts",
+		"svelte.config.js",
+		"src/**/*.ts",
+		"src/**/*.svelte"
+	]
+}
