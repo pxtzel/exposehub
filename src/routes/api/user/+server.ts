@@ -24,6 +24,7 @@ export async function GET({ locals }): Promise<Response> {
 }
 
 export async function POST({ request, cookies }): Promise<Response> {
+	console.log('LMFAO');
 	const sudoPass = cookies.get('sudo');
 	if (sudoPass !== SUDO_PASSWORD) {
 		return json(
