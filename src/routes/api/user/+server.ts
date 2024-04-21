@@ -67,6 +67,7 @@ export async function POST({ request, cookies }): Promise<Response> {
 			user: sanitizeUser(user)
 		});
 	} catch (error) {
+		console.log(error);
 		if (error instanceof Prisma.PrismaClientKnownRequestError) {
 			return json(
 				{
